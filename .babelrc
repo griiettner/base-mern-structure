@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    ["env", {
+      "targets": {
+        "browsers": "last 10 versions"
+      },
+      "loose": true,
+      "modules": false
+    }]
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "babel-plugin-transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.vs/
+build/
+dll/
+etc/
+lib/
+node_modules/
+packages/
+scripts/
+tools/

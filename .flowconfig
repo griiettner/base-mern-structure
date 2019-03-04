@@ -1,0 +1,19 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/styled-components/*
+
+[include]
+.*/public/.*
+.*/server/.*
+
+[libs]
+styled-components
+
+[lints]
+
+[options]
+module.name_mapper='.*\(.s?css\)' -> 'empty/object'
+module.name_mapper='^Types\/\(.*\)$' ->'<PROJECT_ROOT>/flow-typed/\1'
+module.name_mapper='^Types$' ->'<PROJECT_ROOT>/flow-typed'
+module.ignore_non_literal_requires=true
+
+[strict]
