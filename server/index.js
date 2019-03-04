@@ -19,8 +19,6 @@ mongoose
   .catch(err => console.log(err));
 
 // Use Routes
-app.use('/api/items', require('./routes/api/items'));
-app.use('/api/audios', require('./routes/api/audiosApi'));
 app.use('/api/account/signup', require('./routes/api/signup'));
 app.use('/api/account/signin', require('./routes/api/signin'));
 app.use('/api/account/verify', require('./routes/api/verify'));
